@@ -31,10 +31,12 @@ export default function RootLayout() {
   return (
     <Unleash>
       <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
+        {/* <Routes /> start */}
         <Stack>
           <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
           <Stack.Screen name="+not-found" />
         </Stack>
+        {/* <Routes /> end */}
         <StatusBar style="auto" />
       </ThemeProvider>
     </Unleash>
